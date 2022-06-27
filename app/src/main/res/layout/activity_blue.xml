@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".blue_ex.blueActivity"
+    android:orientation="vertical"
+    android:background="#a890fe"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top">
+
+        <Button
+            android:id="@+id/btnArrow"
+            android:layout_width="18.2dp"
+            android:layout_height="36.4dp"
+            android:background="@drawable/whiteback"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="생리대 받기"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/notoxanscjkkr_bold"
+            android:textSize="25dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/blue_radius"
+        android:layout_marginTop="110dp">
+
+
+    <Button
+        android:id="@+id/btnBluetoothOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="블루투스 ON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnBluetoothOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="블루투스 OFF"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOn"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOn"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:text="연결하기"
+        android:textSize="15dp"
+        android:fontFamily="@font/notoxanscjkkr_bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_round"
+        app:layout_constraintStart_toStartOf="@+id/tvBluetoothStatus"
+        app:layout_constraintTop_toBottomOf="@+id/tvBluetoothStatus" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="#747474"
+        android:fontFamily="@font/notoxanscjkkr_regular"
+        android:textStyle="normal"
+        android:text="받을 생리대 수"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#747474"
+            android:fontFamily="@font/notoxanscjkkr_regular"
+            android:textStyle="normal"
+            android:text="(최대 6개):"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/btnNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:fontFamily="@font/blackhansans_regular"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:fontFamily="@font/blackhansans_regular"
+                android:text="개"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:text="-"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_circle"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"></Button>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:text="+"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_circle"
+            android:textSize="20dp"></Button>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:text="생리대 받기"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/notoxanscjkkr_bold"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/btnConnect"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+
+
+</LinearLayout>

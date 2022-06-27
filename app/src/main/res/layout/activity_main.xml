@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WING FOR GIRL"
+            android:textSize="45dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="30dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/blackhansans_regular"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="for user"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="30dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/blackhansans_regular"></TextView>
+
+        <ImageView
+
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logo2"
+            android:layout_marginTop="20dp">
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/firstLog"
+            android:layout_width="210dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_round"
+            android:fontFamily="@font/notoxanscjkkr_bold"
+            android:text="로그인"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"></Button>
+    </LinearLayout>
+
+</LinearLayout>
